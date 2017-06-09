@@ -1,0 +1,14 @@
+¿Que entiende como "Commit"?
+Este es una anotacion que se le hace a un cambio realizado de un codigo
+¿Que entiende como "merge"?
+este nos sirve para poder fusionar los cambios
+
+¿Cual es la diferencia entre "Pull" y "Push"?
+Push nos sirve para mandar informacion al repositorio mientras que Pull nos 
+sirve para obtener los cambios realizados en el repositorio
+
+¿Como utilizar ramas ("branches")en la aplicación?
+El manejo de ramas o branching es la parte más atractiva y divertida de 
+trabajar con Git. Cuando inicializamos o clonamos un repositorio, siempre 
+obtenemos una rama principal por defecto llamada master a no ser que especifiquemos 
+lo contrario.
