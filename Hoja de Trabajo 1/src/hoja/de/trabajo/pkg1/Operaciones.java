@@ -58,6 +58,11 @@ public class Operaciones extends javax.swing.JFrame {
         });
 
         jButton3.setText("3 Invertir");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("4 Regla de Tres");
 
@@ -193,6 +198,43 @@ contador=0;
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+        
+   
+ try{
+       
+    String sCadena = this.jTextField1.getText();
+    String sCadenaInvertida="";
+    
+     
+    for (int x=sCadena.length()-1;x>=0;x--)
+    sCadenaInvertida = sCadenaInvertida + sCadena.charAt(x);
+
+       
+   
+      jLabel4.setText("La cadena es:   "+sCadenaInvertida);
+   
+     
+     
+ this.jTextField1.setText("");
+ this.jTextField2.setText("");
+ this.jTextField3.setText("");
+
+ }catch(Exception g){
+       JOptionPane.showMessageDialog(null, "Algun dato Esta mal ingresado, Favor de Revisar ");
+     }
+        
+
+
+
+
+
+
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
