@@ -51,6 +51,11 @@ public class Operaciones extends javax.swing.JFrame {
         });
 
         jButton2.setText("2 Vocales");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("3 Invertir");
 
@@ -151,6 +156,43 @@ public class Operaciones extends javax.swing.JFrame {
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+       
+ try{
+  
+     
+    String sPalabra = this.jTextField1.getText();
+    int contador=0;
+       
+     
+        for(int x=0;x<sPalabra.length();x++) {
+      if ((sPalabra.charAt(x)=='a') || (sPalabra.charAt(x)=='e') || (sPalabra.charAt(x)=='i') || (sPalabra.charAt(x)=='o') || (sPalabra.charAt(x)=='u')){
+        contador++;
+      }
+    }
+        
+        if(contador==5)
+      jLabel4.setText("La palabra Cumple con 5 vocales " );
+      else
+       jLabel4.setText("La palabra NO CUMPLE con 5 volaces  " );
+            
+     
+       this.jTextField1.setText("");
+ this.jTextField2.setText("");
+ this.jTextField3.setText("");
+contador=0;
+ }catch(Exception g){
+       JOptionPane.showMessageDialog(null, "Algun dato Esta mal ingresado, Favor de Revisar ");
+     }
+        
+        
+        
+
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
