@@ -219,7 +219,7 @@ contador=0;
 
        
    
-      jLabel4.setText("La cadena es:   "+sCadenaInvertida);
+      jLabel4.setText("La cadena es:   "+sCadenaInvertida+"_201020252");
    
      
      
