@@ -5,6 +5,8 @@
  */
 package hoja.de.trabajo.pkg1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ariel
@@ -42,6 +44,11 @@ public class Operaciones extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("1 Hipotenusa");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("2 Vocales");
 
@@ -118,6 +125,32 @@ public class Operaciones extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+   
+ try{
+     
+     Integer a = Integer.valueOf(this.jTextField1.getText());
+     Integer b = Integer.valueOf(this.jTextField2.getText());
+     
+     
+      jLabel4.setText("Hipotenusa es:  "+ Math.sqrt(Math.pow(a, 2)+Math.pow(b, 2)) );
+      
+     
+ this.jTextField1.setText("");
+ this.jTextField2.setText("");
+ this.jTextField3.setText("");
+ }catch(Exception g){
+       JOptionPane.showMessageDialog(null, "Algun dato Esta mal ingresado, Favor de Revisar ");
+     }
+        
+        
+
+
+
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
